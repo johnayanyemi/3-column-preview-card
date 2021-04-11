@@ -20,6 +20,7 @@ main.container {
 }
 
 div.box {
+    width: 30%;
     padding: 3em 0 2em 2.5em;
     height: 75%;
     display: flex;
@@ -34,8 +35,10 @@ div.box h2{
     color: hsl(0, 0%, 95%);
 }
 div.box p{
+    margin-top: -1em;
+    line-height: 1.6;
     font-size: .9em;
-    width: 85%;
+    width: 80%;
     color: hsla(0, 0%, 100%, 0.75);
     position: relative;
     bottom: 15px;
@@ -110,6 +113,7 @@ div.green a{
     }
 
     div.box {
+        width: 90%;
         padding: 3em 2em 2em 3em;
         height: 400px;
         position: relative;
