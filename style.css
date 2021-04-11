@@ -22,20 +22,21 @@ main.container {
 div.box {
     width: 30%;
     padding: 3em 0 2em 2.5em;
-    height: 75%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
 }
 div.box h2{
+    margin-top: -1em;
     font-size: 2.2rem;
     text-transform: uppercase;
     font-family: 'Big Shoulders Display', cursive;
     color: hsl(0, 0%, 95%);
 }
 div.box p{
-    margin-top: -1em;
+    margin-top: -1.5em;
     line-height: 1.6;
     font-size: .9em;
     width: 80%;
@@ -119,7 +120,11 @@ div.green a{
         position: relative;
     }
 
+    div.box h2 {
+        margin-top: unset;
+    }
     div.box p {
+        margin-top: unset;
         position: unset;
         width: 90%;
     }
@@ -150,7 +155,7 @@ div.green a{
     }
 
     div.box {
-        padding: 3em 2em 2em 4em;
+        padding: 3em 1em 2em 2em;
         height: 350px;
         position: relative;
     }
@@ -161,7 +166,7 @@ div.green a{
         border-radius: 0 0 8px 8px;
     }
     div.box p{
-        width: 95%;
+        width: 90%;
     }
 }
 
