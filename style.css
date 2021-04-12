@@ -12,44 +12,41 @@ body {
 }
 
 main.container {
-    height: 90vh;
-    padding: 0 13em;
+    padding: 4em 2em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 div.box {
-    width: 30%;
-    padding: 3em 0 2em 2.5em;
-    height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
+
+    padding: 2em;
+    max-width: 250px;
 }
 div.box h2{
-    margin-top: -1em;
+    margin-top: 1em;
     font-size: 2.2rem;
     text-transform: uppercase;
     font-family: 'Big Shoulders Display', cursive;
     color: hsl(0, 0%, 95%);
 }
 div.box p{
-    margin-top: -1.5em;
-    line-height: 1.6;
+    line-height: 1.5;
+    margin-top: 1.5em;
     font-size: .9em;
-    width: 80%;
     color: hsla(0, 0%, 100%, 0.75);
-    position: relative;
-    bottom: 15px;
     font-family: 'Lexend Deca', sans-serif;
 }
 div.box img{
-    height: 10%;
+    max-height: 10%;
     max-width: 40%;
 }
 div.box a{
+    margin-top: 2.5em;
     font-size: .9em;
     display: inline-block;
     text-decoration: none;
@@ -65,9 +62,8 @@ div.box a:hover, a:active{
 }
 
 div.orange {
+    border-radius: 8px 8px 0 0;
     background-color: hsl(31, 77%, 52%);
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
 }
 div.orange a{
     color: hsl(31, 77%, 52%);
@@ -79,110 +75,42 @@ div.blue a{
     color: hsl(184, 100%, 22%);
 }
 div.green {
+    border-radius: 0 0 8px 8px;
     background-color: hsl(179, 100%, 13%);
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
 }
 div.green a{
     color: hsl(179, 100%, 13%);
 }
 
-@media only screen and (max-width: 1024px){
-    main.container{
-        padding: 0 2em;
-    }
-
-    div.box{
-        height: 65%;
-        padding: 2.5em 1.5em 2em 2em;
-    }
-
-    div.box p {
-        position: unset;
-        width: 100%;
-    }
+.attribution {
+    margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (min-width: 768px) {
     main.container {
-        height: unset;
-        padding: 4em 10em;
+        padding: 6.5em 0 0 0;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
 
     div.box {
-        width: 90%;
-        padding: 3em 2em 2em 3em;
-        height: 400px;
-        position: relative;
+        padding: 2em 1.5em 2em 2em;
+        max-width: 250px;
     }
-
-    div.box h2 {
-        margin-top: unset;
+    div.orange {
+        border-radius: 8px 0 0 8px;
     }
-    div.box p {
-        margin-top: unset;
-        position: unset;
-        width: 90%;
+    div.green {
+        border-radius: 0 8px 8px 0;
     }
     div.box a{
-        padding: .5em 1em;
-        border-radius: 40px;
-    }
-    div.orange{
-        border-radius: 8px 8px 0 0;
-    }
-    div.green{
-        border-radius: 0 0 8px 8px;
+        margin-top: 5em;
     }
 
     .attribution {
-        margin-bottom: 20px;
-    }
-}
-@media only screen and (max-width: 570px){
-    main.container{
-        padding: 4em 5em;
-    }
-}
-@media only screen and (max-width: 400px){
-    main.container {
-        height: unset;
-        padding: 4em 2em;
-    }
-
-    div.box {
-        padding: 3em 1em 2em 2em;
-        height: 350px;
-        position: relative;
-    }
-    div.orange{
-        border-radius: 8px 8px 0 0;
-    }
-    div.green{
-        border-radius: 0 0 8px 8px;
-    }
-    div.box p{
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 325px){
-    main.container {
-        height: unset;
-        padding: 4em .5em;
-    }
-
-    div.box {
-        padding: 3em 2em 2em 3em;
-        height: 320px;
-        position: relative;
-    }
-
-    div.box > p, a{
-        font-size: .8em;
+        margin-bottom: unset;
+        margin-top: 20px;
     }
 }
