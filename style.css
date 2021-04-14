@@ -12,20 +12,13 @@ body {
 }
 
 main.container {
-    padding: 4em 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 80%;
+    margin: 2em auto;
 }
 
 div.box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
     padding: 2em;
-    max-width: 250px;
+    width: 100%;
 }
 div.box h2{
     margin-top: 1em;
@@ -35,11 +28,11 @@ div.box h2{
     color: hsl(0, 0%, 95%);
 }
 div.box p{
-    line-height: 1.5;
+    line-height: 1.7;
     margin-top: 1.5em;
-    font-size: .9em;
     color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Lexend Deca', sans-serif;
+    font-size: .8em;
 }
 div.box img{
     max-height: 10%;
@@ -47,7 +40,7 @@ div.box img{
 }
 div.box a{
     margin-top: 2.5em;
-    font-size: .9em;
+    font-size: .8em;
     display: inline-block;
     text-decoration: none;
     border: 2px solid hsl(0, 0%, 95%);
@@ -82,21 +75,18 @@ div.green a{
     color: hsl(179, 100%, 13%);
 }
 
-.attribution {
-    margin-bottom: 20px;
-}
-
 @media only screen and (min-width: 768px) {
     main.container {
-        padding: 6.5em 0 0 0;
+        width: 100%;
+        margin: auto;
+        min-height: 100vh;
         display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
 
     div.box {
-        padding: 2em 1.5em 2em 2em;
+        padding: 2em 2.5em;
         max-width: 250px;
     }
     div.orange {
@@ -107,10 +97,5 @@ div.green a{
     }
     div.box a{
         margin-top: 5em;
-    }
-
-    .attribution {
-        margin-bottom: unset;
-        margin-top: 20px;
     }
 }
